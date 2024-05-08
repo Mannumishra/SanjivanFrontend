@@ -1,0 +1,116 @@
+.singlepagemain{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: start;
+    padding: 20px 40px;
+}
+.singlefirst{
+    width: 48%;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+.chilefirst{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    cursor: pointer;
+}
+.chilesecond{
+    width: 100%;
+}
+.singlesecond{
+    width: 40%;
+}
+.singlepageimage1{
+    height: 400px;
+    width: 100%;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon {
+background-color: green;
+}
+.carousel-indicators [data-bs-target] {
+    background-color: black;
+}
+.carousel-indicators{
+    top: 395px;
+}
+.singlepagetext{
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 900;
+    /* font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+}
+.singlepageproductname{
+    font-size: 40px;
+    font-weight: 800;
+}
+.singlepagerateing{
+    display: flex;
+    justify-content: baseline;
+    align-items: start;
+    color: orange;
+    font-size: 23px;
+}
+.singlepageprice{
+    color: red;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.priceandsaveprice{
+    display: flex;
+    gap: 20px;
+}
+.savebutton{
+    background-color: red;
+    padding: 10px;
+    height: 30px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 700;
+}
+.singlepagewaitbutton{
+    border: 2px solid black;
+    height: auto;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(245, 245, 245);
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.quantitytext{
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.cartquantity{
+    height: auto;
+    width: 25%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding:5px 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.textquantity{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}

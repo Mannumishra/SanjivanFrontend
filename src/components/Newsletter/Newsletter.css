@@ -1,0 +1,91 @@
+.parantediv{
+    position: relative;
+}
+.newletterimage{
+    height: auto;
+    width: 100%;
+}
+.newsletterform{
+    height: 280px;
+    width: 40%;
+    background-color: rgb(245, 245, 245);
+    border-radius: 10px;
+    position: absolute;
+    bottom: 30%;
+    left: 55%;
+    right: 10%;
+
+}
+.newstextdiv{
+    padding: 30px 50px;
+}
+.newstextfirst{
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 800;
+}
+.newsletterbutton{
+    display: flex;
+    gap: 10px;
+    padding: 4px 50px;
+}
+.inputsize{
+    height: 50px;
+}
+.inputsize  ::placeholder{
+    margin-left: 20px;
+}
+.newslettertextsecond{
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.newsbutton{
+    background-color: #134611;
+    color: white;
+    border-radius: 5px;
+    padding: 12px;
+    letter-spacing: 1px;
+}
+@media(max-width:768px){
+    .newsletterform{
+        height: auto;
+        width: 90%;
+        background-color: rgb(245, 245, 245);
+        border-radius: 10px;
+        position: absolute;
+        bottom: 2%;
+        top: 2%;
+        left: 2%;
+        right: 2%;
+        object-fit: cover;
+    }
+    .newstextdiv{
+        padding: 10px 10px;
+    }
+    .newstextfirst{
+        font-size: 10px;
+        letter-spacing: 1px;
+        font-weight: 800;
+    }
+    .newsletterbutton{
+        display: flex;
+        gap: 10px;
+        padding: 4px 10px;
+    }
+    .newslettertextsecond{
+        font-size: 10px;
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+    .newsbutton{
+        background-color: #134611;
+        color: white;
+        border-radius: 5px;
+        padding:5px;
+        letter-spacing: 1px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
