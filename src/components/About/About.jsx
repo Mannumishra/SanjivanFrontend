@@ -6,7 +6,7 @@ import './About.css'
 const About = () => {
     return (
         <>
-           
+        <div style={{marginTop:200}}></div>
         </>
     )
 }

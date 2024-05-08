@@ -33,7 +33,7 @@
 }
 .iconset{
     display: flex;
-    gap:30px;
+    gap:10px;
     font-size: 40px;
     cursor: pointer;
 }
