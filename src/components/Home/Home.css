@@ -5,11 +5,84 @@
 .carousel-indicators{
     margin-top: 450px;
 }
+.headinghomefirst{
+    font-size: 20px;
+    font-weight: 500;
+    justify-content: start;
+}
+.labsection{
+    margin-top: 60px;
+}
+.divsectionthirdparty{
+    background-color: #F6F6F6;
+    padding: 20px 20px;
+    /* gap: 2px; */
+    border-radius: 5px;
+}
+.thirdparyheading{
+    font-size: 17px;
+    opacity: 0.9;
+    font-weight: 700;
+    align-items: center;
+}
+.whyshould{
+   text-align: center; 
+   font-size: 25px;
+   font-weight: 600;
+   opacity: 0.9;
+}
+.textwhyshould{
+    font-weight: 400;
+}
 .carousel-control-next-icon, .carousel-control-prev-icon {
     background-color: green;
     }
 @media(max-width:768px){
     .carousel-indicators{
         margin-top: 150px;
+    }
+}
+.mainabout{
+    padding: 40px 40px;
+    margin-top: 20px;
+}
+.aboutheading{
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #134611;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    /* font-family: 'Courier New', Courier; */
+}
+.aboutmainheading{
+    font-size: 23px;
+    font-weight: 800;
+    background-color: #134611;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+.abouttext{
+    /* font-size: 15px; */
+    font-weight: 400;
+    font-family: sans-serif;
+}
+.mainhome{
+    margin-top: 120px;
+}
+
+@media(max-width:768px){
+    .mainabout{
+        padding: 40px 10px;
+        margin-top: 40px;
+    }
+    .aboutheading{
+        font-size: 20px;
+        font-weight: 700;
+        /* font-family: 'Courier New', Courier; */
+        line-height: 20px;
+        justify-content: start;
     }
 }

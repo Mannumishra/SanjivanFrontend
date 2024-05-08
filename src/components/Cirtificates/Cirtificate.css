@@ -1,0 +1,8 @@
+.sectionmanagecirtificate{
+margin-top: 150px;
+}
+@media(max-width:768px){
+    .sectionmanagecirtificate{
+        margin-top: 100px;
+        }
+}

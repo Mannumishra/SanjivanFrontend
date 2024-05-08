@@ -58,7 +58,7 @@ const Navbar = () => {
                             </div> */}
                             {/* </div> */}
                             <div className={`logo ${isSearchActive ? 'logo-none' : ''}`} >
-                                <img src={logo} alt="" className='logiimg' />
+                               <Link to="/"> <img src={logo} alt="" className='logiimg' /></Link>
                                 {/* <h2>50<span>Tola</span></h2> */}
                             </div>
                             {/* <div className="bag">
@@ -69,9 +69,11 @@ const Navbar = () => {
                                 <ul>
                                     <li><Link to="/">Home</Link></li>
                                     <li><Link to="/about">About</Link></li>
-                                    <li><Link to="/contact">CONTRACT MANUFACTURING</Link></li>
                                     <li><Link to="/product">Product</Link></li>
-                                    <li><Link>Careers</Link></li>
+                                    <li><Link to='/cirtificates' >Our Certificates</Link></li>
+                                    {/* <li><Link>Careers</Link></li> */}
+                                    <li><Link to="/contact">CONTRACT FOR MANUFACTURING</Link></li>
+
                                     {/* <li><Link>JOURNAL</Link></li>
                             <li><Link to="/about">ABOUT</Link></li>
                             <li><Link to={'/contact'}>CONTACT</Link></li> */}
@@ -83,9 +85,9 @@ const Navbar = () => {
                                     <i class="ri-menu-line" onClick={activeMobMode}></i>
                                 </div>
                                 <div className={`search-box ${isSearchActive ? 'active-searchbar' : ''}`} >
-                                <input type="text" placeholder="Search" />
-                                <button>Search</button>
-                            </div>
+                                    <input type="text" placeholder="Search" />
+                                    <button>Search</button>
+                                </div>
                             </div>
                         </div>
 
@@ -104,6 +106,7 @@ const Navbar = () => {
                             <li><Link to="/contact" onClick={deActiveMobMode}>CONTRACT MANUFACTURING</Link></li>
                             <li><Link to="/product" onClick={deActiveMobMode}>Product</Link></li>
                             <li><Link onClick={deActiveMobMode}>Careers</Link></li>
+                            <li><Link onClick={deActiveMobMode}>Our Certificates</Link></li>
                             {/* <li><Link onClick={deActiveMobMode}>JOURNAL</Link></li>
                         <li><Link onClick={deActiveMobMode}>ABOUT</Link></li>
                         <li><Link onClick={deActiveMobMode}>CONTACT</Link></li>

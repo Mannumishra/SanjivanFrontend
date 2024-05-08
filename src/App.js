@@ -8,6 +8,7 @@ import SinglePage from './components/Singlepage/SinglePage';
 import About from './components/About/About';
 import Contact from './components/Contact/Contact';
 import Product from './components/Product/Product';
+import Cirtificates from './components/Cirtificates/Cirtificates';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
     <Route path='/singlepage' element={<SinglePage />} />
     <Route path='/contact' element={<Contact />} />
     <Route path='/product' element={<Product />} />
+    <Route path='/cirtificates' element={<Cirtificates />} />
    </Routes>
    <Footer />
    </BrowserRouter>
