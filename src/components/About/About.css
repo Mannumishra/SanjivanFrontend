@@ -5,6 +5,10 @@
 .aboutheading{
     font-size: 23px;
     font-weight: 800;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
     /* font-family: 'Courier New', Courier; */
 }
 .abouttext{
