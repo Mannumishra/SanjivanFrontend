@@ -6,7 +6,10 @@
     z-index: 999;
     background-color: white;
 }
-
+.logiimg{
+    height: 120px !important;
+    width: 120px !important;
+}
 .header-section .header-container{
     max-width: 1920px;
     margin: 0 auto;
@@ -224,6 +227,10 @@
 }
 
 @media (max-width:950px) {
+    .logiimg{
+        height: 80px !important;
+        width: 80px !important;
+    }
     .header-section{
         width: 100%;
         position: fixed;
@@ -281,7 +288,7 @@
     
     .header-section .header-container .mob-nav .menu-close{
         width: 100%;
-        padding: 17px;
+        padding: 10px;
         display: flex;
         justify-content: flex-end;
         align-items: flex-end;
@@ -314,11 +321,15 @@
     .header-section .header-container .mob-nav ul li{
         width: 100%;
         border-bottom: 1px solid rgb(210, 210, 210);
+        list-style-type: none;
     }
     
     .header-section .header-container .mob-nav ul li a{
         display: inline-block;
         padding: 12px 12px;
+        text-decoration: none;
+        color: black;
+
     }
     
     .header-section .header-container .mob-nav .info{
@@ -383,7 +394,7 @@
     }
     
     .header-section .header-container .bottom-header .top{
-        padding: 10px 20px;
+        padding: 0px 20px;
     }
     
     .header-section .header-container .bottom-header .top{

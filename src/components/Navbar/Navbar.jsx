@@ -57,7 +57,7 @@ const Navbar = () => {
                             </div> */}
                             {/* </div> */}
                             <div className={`logo ${isSearchActive ? 'logo-none' : ''}`} >
-                                <img src="../Image/logo.jpeg" alt="" style={{ height: 120 }} />
+                                <img src="../Image/logo.jpeg" alt="" className='logiimg' />
                                 {/* <h2>50<span>Tola</span></h2> */}
                             </div>
                             {/* <div className="bag">
@@ -69,7 +69,7 @@ const Navbar = () => {
                                     <li><Link to="/">Home</Link></li>
                                     <li><Link to="/about">About</Link></li>
                                     <li><Link>CONTRACT MANUFACTURING</Link></li>
-                                    <li><Link>Product</Link></li>
+                                    <li><Link to="/product">Product</Link></li>
                                     <li><Link>Careers</Link></li>
                                     {/* <li><Link>JOURNAL</Link></li>
                             <li><Link to="/about">ABOUT</Link></li>
@@ -101,14 +101,14 @@ const Navbar = () => {
                             <li><Link to="/" onClick={deActiveMobMode}>Home</Link></li>
                             <li><Link to="/about" onClick={deActiveMobMode}>About</Link></li>
                             <li><Link onClick={deActiveMobMode}>CONTRACT MANUFACTURING</Link></li>
-                            <li><Link onClick={deActiveMobMode}>Product</Link></li>
+                            <li><Link to="/product" onClick={deActiveMobMode}>Product</Link></li>
                             <li><Link onClick={deActiveMobMode}>Careers</Link></li>
                             {/* <li><Link onClick={deActiveMobMode}>JOURNAL</Link></li>
                         <li><Link onClick={deActiveMobMode}>ABOUT</Link></li>
                         <li><Link onClick={deActiveMobMode}>CONTACT</Link></li>
                         <li><Link onClick={deActiveMobMode}>MY ACCOUNT</Link></li> */}
                         </ul>
-                        <div className="social-link">
+                        {/* <div className="social-link">
                             <div onClick={deActiveMobMode} className="link-icon">
                                 <i class="ri-instagram-line"></i>
                             </div>
@@ -118,7 +118,7 @@ const Navbar = () => {
                             <div onClick={deActiveMobMode} className="link-icon">
                                 <i class="ri-pinterest-line"></i>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </header>
