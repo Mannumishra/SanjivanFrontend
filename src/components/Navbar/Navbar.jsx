@@ -105,8 +105,8 @@ const Navbar = () => {
                             <li><Link to="/about" onClick={deActiveMobMode}>About</Link></li>
                             <li><Link to="/contact" onClick={deActiveMobMode}>CONTRACT MANUFACTURING</Link></li>
                             <li><Link to="/product" onClick={deActiveMobMode}>Product</Link></li>
-                            <li><Link onClick={deActiveMobMode}>Careers</Link></li>
-                            <li><Link onClick={deActiveMobMode}>Our Certificates</Link></li>
+                            {/* <li><Link onClick={deActiveMobMode}>Careers</Link></li> */}
+                            <li><Link to="/cirtificates" onClick={deActiveMobMode}>Our Certificates</Link></li>
                             {/* <li><Link onClick={deActiveMobMode}>JOURNAL</Link></li>
                         <li><Link onClick={deActiveMobMode}>ABOUT</Link></li>
                         <li><Link onClick={deActiveMobMode}>CONTACT</Link></li>
