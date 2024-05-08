@@ -69,7 +69,7 @@ const Navbar = () => {
                                 <ul>
                                     <li><Link to="/">Home</Link></li>
                                     <li><Link to="/about">About</Link></li>
-                                    <li><Link>CONTRACT MANUFACTURING</Link></li>
+                                    <li><Link to="/contact">CONTRACT MANUFACTURING</Link></li>
                                     <li><Link to="/product">Product</Link></li>
                                     <li><Link>Careers</Link></li>
                                     {/* <li><Link>JOURNAL</Link></li>
@@ -101,7 +101,7 @@ const Navbar = () => {
                         <ul>
                             <li><Link to="/" onClick={deActiveMobMode}>Home</Link></li>
                             <li><Link to="/about" onClick={deActiveMobMode}>About</Link></li>
-                            <li><Link onClick={deActiveMobMode}>CONTRACT MANUFACTURING</Link></li>
+                            <li><Link to="/contact" onClick={deActiveMobMode}>CONTRACT MANUFACTURING</Link></li>
                             <li><Link to="/product" onClick={deActiveMobMode}>Product</Link></li>
                             <li><Link onClick={deActiveMobMode}>Careers</Link></li>
                             {/* <li><Link onClick={deActiveMobMode}>JOURNAL</Link></li>

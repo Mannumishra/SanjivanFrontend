@@ -1,6 +1,7 @@
 import React from 'react'
 import './Product.css'
 import prod1 from '../Image/prod1.webp'
+import { Link } from 'react-router-dom'
 const Product = () => {
     return (
         <>
@@ -30,7 +31,7 @@ const Product = () => {
                         </div>
                         <p className='productprice'>₹ 899.00 <span><del style={{color:"black" ,opacity:"0.8" , marginLeft:20}}>₹ 999.00</del></span></p> */}
                         <div className='productbotton'>
-                           Enquery
+                         <Link to="/contact" style={{color:"white",textDecoration:"none"}}>  Enquery</Link>
                         </div>
                     </div>
                 </div>
@@ -52,7 +53,7 @@ const Product = () => {
                         </div>
                         <p className='productprice'>₹ 899.00 <span><del style={{color:"black" ,opacity:"0.8" , marginLeft:20}}>₹ 999.00</del></span></p> */}
                         <div className='productbotton'>
-                           Enquery
+                         <Link to="/contact" style={{color:"white",textDecoration:"none"}}>  Enquery</Link>
                         </div>
                     </div>
                 </div>
@@ -74,7 +75,7 @@ const Product = () => {
                         </div>
                         <p className='productprice'>₹ 899.00 <span><del style={{color:"black" ,opacity:"0.8" , marginLeft:20}}>₹ 999.00</del></span></p> */}
                         <div className='productbotton'>
-                           Enquery
+                         <Link to="/contact" style={{color:"white",textDecoration:"none"}} >  Enquery</Link>
                         </div>
                     </div>
                 </div>
@@ -96,7 +97,7 @@ const Product = () => {
                         </div>
                         <p className='productprice'>₹ 899.00 <span><del style={{color:"black" ,opacity:"0.8" , marginLeft:20}}>₹ 999.00</del></span></p> */}
                         <div className='productbotton'>
-                           Enquery
+                         <Link to="/contact" style={{color:"white",textDecoration:"none"}}>  Enquery</Link>
                         </div>
                     </div>
                 </div>
@@ -118,7 +119,7 @@ const Product = () => {
                         </div>
                         <p className='productprice'>₹ 899.00 <span><del style={{color:"black" ,opacity:"0.8" , marginLeft:20}}>₹ 999.00</del></span></p> */}
                         <div className='productbotton'>
-                           Enquery
+                         <Link to="/contact" style={{color:"white",textDecoration:"none"}}>  Enquery</Link>
                         </div>
                     </div>
                 </div>
@@ -140,7 +141,7 @@ const Product = () => {
                         </div>
                         <p className='productprice'>₹ 899.00 <span><del style={{color:"black" ,opacity:"0.8" , marginLeft:20}}>₹ 999.00</del></span></p> */}
                         <div className='productbotton'>
-                           Enquery
+                         <Link to="/contact" style={{color:"white",textDecoration:"none"}}>  Enquery</Link>
                         </div>
                     </div>
                 </div>
@@ -162,7 +163,7 @@ const Product = () => {
                         </div> */}
                         {/* <p className='productprice'>₹ 899.00 <span><del style={{color:"black" ,opacity:"0.8" , marginLeft:20}}>₹ 999.00</del></span></p> */}
                         <div className='productbotton'>
-                            Enquery 
+                          <Link to="/contact" style={{color:"white",textDecoration:"none"}}>  Enquery</Link> 
                         </div>
                     </div>
                 </div>
