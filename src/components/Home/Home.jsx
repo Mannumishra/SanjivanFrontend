@@ -5,6 +5,11 @@ import Newsletter from '../Newsletter/Newsletter'
 import Querysection from '../QuerySection/Querysection'
 import Product from '../Product/Product'
 import About from '../About/About'
+import banare1 from '../Image/banare1.jpg'
+import banare2 from '../Image/banare2.jpg'
+import banare3 from '../Image/banare3.jpg'
+import banare4 from '../Image/banare4.jpg'
+// import banare1 from '../Image/banare1.jpg'
 
 const Home = () => {
   return (
@@ -20,16 +25,16 @@ const Home = () => {
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="../image/banare1.jpg" class="d-block w-100" alt="..." />
+                <img src={banare1} class="d-block w-100" alt="..." />
               </div>
               <div class="carousel-item">
-                <img src="../image/banare2.jpg" class="d-block w-100" alt="..." />
+                <img src={banare2} class="d-block w-100" alt="..." />
               </div>
               <div class="carousel-item">
-                <img src="../image/banare3.jpg" class="d-block w-100" alt="..." />
+                <img src={banare3} class="d-block w-100" alt="..." />
               </div>
               <div class="carousel-item">
-                <img src="../image/banare4.jpg" class="d-block w-100" alt="..." />
+                <img src={banare4} class="d-block w-100" alt="..." />
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">

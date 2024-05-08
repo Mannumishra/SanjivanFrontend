@@ -1,11 +1,14 @@
 import React from 'react'
 import './Newsletter.css'
+import newsletter from '../Image/newsletter.webp'
+
+
 const Newsletter = () => {
     return (
         <>
             <div className="newslettermain mt-2">
                 <div className="parantediv">
-                    <img src="../image/newsletter.webp" alt="" className='newletterimage' />
+                    <img src={newsletter} alt="" className='newletterimage' />
                     <div className='newsletterform'>
                         <div className="newstextdiv">
                         <p className='newstextfirst'>SUBSCRIBE TO OUR NEWSLETTER</p>

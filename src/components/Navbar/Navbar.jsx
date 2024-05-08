@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import "./Navbar.css"
+import logo from '../Image/logo.jpeg'
 
 const Navbar = () => {
     const [isMobModeActive, setIsMobModeActive] = useState(false)
@@ -57,7 +58,7 @@ const Navbar = () => {
                             </div> */}
                             {/* </div> */}
                             <div className={`logo ${isSearchActive ? 'logo-none' : ''}`} >
-                                <img src="../Image/logo.jpeg" alt="" className='logiimg' />
+                                <img src={logo} alt="" className='logiimg' />
                                 {/* <h2>50<span>Tola</span></h2> */}
                             </div>
                             {/* <div className="bag">

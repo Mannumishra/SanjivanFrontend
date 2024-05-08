@@ -1,5 +1,6 @@
 import React from 'react'
 import './Product.css'
+import prod1 from '../Image/prod1.webp'
 const Product = () => {
     return (
         <>
@@ -13,7 +14,7 @@ const Product = () => {
             <div className="cardproduct">
                 <div className="cardfirst">
                     <div className="firstchild">
-                        <img src="../image/prod1.webp" alt="" className='productimage'/>
+                        <img src={prod1} alt="" className='productimage'/>
                         {/* <div className='imgebutton'>
                             SAVE ₹ 899.00
                         </div> */}
@@ -35,7 +36,7 @@ const Product = () => {
                 </div>
                 <div className="cardfirst">
                     <div className="firstchild">
-                        <img src="../image/prod1.webp" alt="" className='productimage'/>
+                        <img src={prod1} alt="" className='productimage'/>
                         {/* <div className='imgebutton'>
                             SAVE ₹ 899.00
                         </div> */}
@@ -57,7 +58,7 @@ const Product = () => {
                 </div>
                 <div className="cardfirst">
                     <div className="firstchild">
-                        <img src="../image/prod1.webp" alt="" className='productimage'/>
+                        <img src={prod1} alt="" className='productimage'/>
                         {/* <div className='imgebutton'>
                             SAVE ₹ 899.00
                         </div> */}
@@ -79,7 +80,7 @@ const Product = () => {
                 </div>
                 <div className="cardfirst">
                     <div className="firstchild">
-                        <img src="../image/prod1.webp" alt="" className='productimage'/>
+                        <img src={prod1} alt="" className='productimage'/>
                         {/* <div className='imgebutton'>
                             SAVE ₹ 899.00
                         </div> */}
@@ -101,7 +102,7 @@ const Product = () => {
                 </div>
                 <div className="cardfirst">
                     <div className="firstchild">
-                        <img src="../image/prod1.webp" alt="" className='productimage'/>
+                        <img src={prod1} alt="" className='productimage'/>
                         {/* <div className='imgebutton'>
                             SAVE ₹ 899.00
                         </div> */}
@@ -123,7 +124,7 @@ const Product = () => {
                 </div>
                 <div className="cardfirst">
                     <div className="firstchild">
-                        <img src="../image/prod1.webp" alt="" className='productimage'/>
+                        <img src={prod1} alt="" className='productimage'/>
                         {/* <div className='imgebutton'>
                             SAVE ₹ 899.00
                         </div> */}
@@ -145,7 +146,7 @@ const Product = () => {
                 </div>
                 <div className="cardfirst">
                     <div className="firstchild">
-                        <img src="../image/prod1.webp" alt="" className='productimage'/>
+                        <img src={prod1} alt="" className='productimage'/>
                         {/* <div className='imgebutton'>
                             SAVE ₹ 899.00
                         </div> */}

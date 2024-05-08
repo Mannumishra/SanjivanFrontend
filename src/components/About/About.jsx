@@ -1,5 +1,10 @@
 import React from 'react'
 import './About.css'
+import aboutus from '../Image/aboutus.png'
+import cirtificate1 from '../Image/cirtificate1.jpg'
+import cirtificate2 from '../Image/cirtificate2.jpg'
+import cirtificate3 from '../Image/cirtificate3.jpg'
+import cirtificate4 from '../Image/cirtificate4.jpg'
 
 const About = () => {
     return (
@@ -14,7 +19,7 @@ const About = () => {
                 </div>
                 <div className="row">
                     <div className="col-md-6">
-                        <img src="../Image/aboutus.png" alt="" className='w-100' />
+                        <img src={aboutus} alt="" className='w-100' />
                     </div>
                     <div className="col-md-6">
                         <p className='aboutheading'>Why Choose Sanjivan Anusandhan for Your Third-Party Manufacturing Needs?      </p>
@@ -36,16 +41,16 @@ const About = () => {
                         <p className='aboutheading text-center'>Our Certificates</p>
                     </div>
                     <div className="col-md-6">
-                        <img src="../Image/cirtificate1.jpg" alt="" className='w-100' style={{ height: 600 }} />
+                        <img src={cirtificate1} alt="" className='w-100' style={{ height: 600 }} />
                     </div>
                     <div className="col-md-6">
-                        <img src="../Image/cirtificate2.jpg" alt="" className='w-100' style={{ height: 600 }} />
+                        <img src={cirtificate2} alt="" className='w-100' style={{ height: 600 }} />
                     </div>
                     <div className="col-md-6">
-                        <img src="../Image/cirtificate3.jpg" alt="" className='w-100' style={{ height: 600 }} />
+                        <img src={cirtificate3} alt="" className='w-100' style={{ height: 600 }} />
                     </div>
                     <div className="col-md-6">
-                        <img src="../Image/cirtificate4.jpg" alt="" className='w-100' style={{ height: 600 }} />
+                        <img src={cirtificate4} alt="" className='w-100' style={{ height: 600 }} />
                     </div>
                 </div>
             </div>
