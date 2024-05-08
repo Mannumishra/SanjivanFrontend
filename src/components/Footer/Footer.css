@@ -5,6 +5,14 @@
     background-color: #1A1A1A;
     color: white;
 }
+.footerheading{
+    font-size: 18px;
+    font-weight: 700;
+}
+.fotertext{
+    font-size: 16px;
+    font-weight: 500;
+}
 .footermain{
     padding: 60px 40px;
     display: flex;
