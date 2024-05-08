@@ -9,6 +9,7 @@ import banare1 from '../Image/banare1.jpg'
 import banare2 from '../Image/banare2.jpg'
 import banare3 from '../Image/banare3.jpg'
 import banare4 from '../Image/banare4.jpg'
+import './Home.css'
 // import banare1 from '../Image/banare1.jpg'
 
 const Home = () => {

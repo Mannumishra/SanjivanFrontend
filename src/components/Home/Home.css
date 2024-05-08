@@ -1,0 +1,15 @@
+.carousel-indicators [data-bs-target] {
+    background-color: black;
+    margin-top: 300px;
+}
+.carousel-indicators{
+    margin-top: 450px;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    background-color: green;
+    }
+@media(max-width:768px){
+    .carousel-indicators{
+        margin-top: 150px;
+    }
+}

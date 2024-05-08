@@ -28,15 +28,7 @@
     height: 400px;
     width: 100%;
 }
-.carousel-control-next-icon, .carousel-control-prev-icon {
-background-color: green;
-}
-.carousel-indicators [data-bs-target] {
-    background-color: black;
-}
-.carousel-indicators{
-    top: 395px;
-}
+
 .singlepagetext{
     font-size: 16px;
     text-transform: uppercase;
