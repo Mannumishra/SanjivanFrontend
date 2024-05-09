@@ -21,13 +21,13 @@ const Footer = () => {
                                 sanjivan.anusandhan@gmail.com
                                 sanjivan.anusandhan1880@gmail.com</p>
                         </div>
-                        <div className="third">
+                        {/* <div className="third">
                             <p className='footerheading'>LEGAL INFORMATION</p>
                             <p className='fotertext'>Privacy Policy</p>
                             <p className='fotertext'>Refund Policy</p>
                             <p className='fotertext'>Terms & conditions</p>
                             <p className='fotertext'>Shipping & Delivery Policy</p>
-                        </div>
+                        </div> */}
                         <div className="four">
                             <p className='footerheading'>FOLLOW US</p>
                             <p className='fotertext'>Follow and discover the time-tested secrets of Ayurveda with us!</p>

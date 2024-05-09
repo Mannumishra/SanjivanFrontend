@@ -7,6 +7,10 @@
     text-align: center;
     margin-bottom: 40px;
     font-weight: 600;
+    background-color: #134611;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
 }
 @media(max-width:768px){
     .contactheading{
