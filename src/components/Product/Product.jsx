@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './Product.css'
-import '../CoreData/coredata.css'
+// import '../CoreData/coredata.css'
 // import prod1 from '../Image/prod1.webp'
 // import Planet from '../Image/PATENT.1jpg.jpg'
 // import Planet1 from '../Image/PATENT.jpg'

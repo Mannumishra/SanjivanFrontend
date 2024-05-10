@@ -28,7 +28,7 @@ const CategoryProduct = () => {
     <>
       <section className='mainhome'>
         <div className="product">
-          <div className="coreheading">
+          <div className="aboutheading text-center">
             Product Available {catedata} category
           </div>
           <p className='productsmallheading'>EXCLUSIVE DEALS AWAIT YOU</p>

@@ -188,7 +188,7 @@ const Home = () => {
       </section>
       <section className='mainhome'>
         <div className="product">
-          <div className="coreheading">
+          <div className="aboutheading text-center">
             Product Range Available for Third Party Manufacturing
           </div>
           <p className='productsmallheading'>EXCLUSIVE DEALS AWAIT YOU</p>
