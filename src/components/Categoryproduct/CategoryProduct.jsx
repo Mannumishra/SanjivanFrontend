@@ -33,7 +33,7 @@ const CategoryProduct = () => {
           {filterData.map((item, index) =>
             <div className="cardfirst">
               <div className="firstchild">
-                <Link to={`/product/${item.categoryname}`} > <img src={item.image} alt="" className='productimage' /></Link>
+                <Link to={`/singlepage/${item._id}`}> <img src={item.image} alt="" className='productimage' /></Link>
               </div>
               <div className="secondchild">
                 <p className='productname'>{item.categoryname}</p>

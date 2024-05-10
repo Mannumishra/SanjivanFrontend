@@ -14,7 +14,7 @@
     display: flex;
 }
 .abouttext{
-    margin-top: 50px;
+    margin-top: 10px;
     padding: 15px;
     font-size: 17px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -73,4 +73,33 @@
     font-family: 'Times New Roman', Times, serif;
     font-weight: 600;
     opacity: 1;
+}
+@media(max-width:768px){
+    .meatteam{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 0px 10px;
+    }
+    .meetteammember{
+        width: 100%;
+        padding: 10px;
+    }
+    .abouttextdiv{
+        display: flex;
+        flex-direction: column;
+    }
+    .aboutheadingg{
+        font-size: 15px;
+        font-weight: 500;
+        padding:5px;
+    }
+    .abouttext {
+        margin-top: 16px;
+        padding: 5px;
+        font-size: 16px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 400;
+        text-align: justify;
+    }
 }

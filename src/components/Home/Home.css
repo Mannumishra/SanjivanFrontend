@@ -101,4 +101,26 @@
         line-height: 20px;
         justify-content: start;
     }
+    .aboutmainheading {
+        font-size: 16px;
+        font-weight: 600;
+        background-color: #134611;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        text-align: center;
+    }
+    .mainabout {
+        padding: 20px 20px;
+        margin-top: 0px;
+    }
+    .aboutheading {
+        font-size: 16px;
+        font-weight: 400;
+        background-color: #134611;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        /* font-family: 'Courier New', Courier; */
+    }
 }

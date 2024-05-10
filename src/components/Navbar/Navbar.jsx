@@ -58,7 +58,7 @@ const Navbar = () => {
                             </div> */}
                             {/* </div> */}
                             <div className={`logo ${isSearchActive ? 'logo-none' : ''}`} >
-                               <Link to="/"> <img src={logo} alt="" className='logiimg' /></Link>
+                                <Link to="/"> <img src={logo} alt="" className='logiimg' /></Link>
                                 {/* <h2>50<span>Tola</span></h2> */}
                             </div>
                             {/* <div className="bag">
@@ -81,7 +81,7 @@ const Navbar = () => {
                             </nav>
                             <div className="search">
                                 <div className="icon">
-                                    <i class="ri-search-line" onClick={activeSearchBar}></i>
+                                    <i class="ri-search-line" ></i>
                                     <i class="ri-menu-line" onClick={activeMobMode}></i>
                                 </div>
                                 <div className={`search-box ${isSearchActive ? 'active-searchbar' : ''}`} >
@@ -103,10 +103,10 @@ const Navbar = () => {
                         <ul>
                             <li><Link to="/" onClick={deActiveMobMode}>Home</Link></li>
                             <li><Link to="/about" onClick={deActiveMobMode}>About</Link></li>
-                            <li><Link to="/contact" onClick={deActiveMobMode}>CONTRACT MANUFACTURING</Link></li>
-                            <li><Link to="/product" onClick={deActiveMobMode}>Product</Link></li>
+                            <li><Link to="/contact" onClick={deActiveMobMode}>CONTACT FOR MANUFACTURING</Link></li>
+                            <li><Link to="/product" onClick={deActiveMobMode}>Our Categories</Link></li>
                             {/* <li><Link onClick={deActiveMobMode}>Careers</Link></li> */}
-                            <li><Link to="/cirtificates" onClick={deActiveMobMode}>Our Certificates</Link></li>
+                            <li><Link to="/cirtificates" onClick={deActiveMobMode}>Our Certifications</Link></li>
                             {/* <li><Link onClick={deActiveMobMode}>JOURNAL</Link></li>
                         <li><Link onClick={deActiveMobMode}>ABOUT</Link></li>
                         <li><Link onClick={deActiveMobMode}>CONTACT</Link></li>

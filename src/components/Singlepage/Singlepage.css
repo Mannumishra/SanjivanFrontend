@@ -39,6 +39,7 @@
 .singlepageproductname{
     font-size: 40px;
     font-weight: 800;
+    text-transform: capitalize;
 }
 .singlepagerateing{
     display: flex;
@@ -110,4 +111,38 @@
     justify-content: center;
     align-items: center;
     margin-top: 10px;
+}
+@media(max-width:768px){
+    .singlepagewaitbutton{
+        width: 90%;
+        margin-left: 20px;
+    }
+    .singlepageimage1{
+        height: 100%;
+        width: 100%;
+    }
+    .singlefirst{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .chilefirst{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        cursor: pointer;
+    }
+    .singlepageproductname{
+        font-size: 20px;
+        font-weight: 800;
+    }
+    .singlepagetext{
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 500;
+        /* font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+    }
 }

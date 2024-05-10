@@ -4,6 +4,7 @@ import axios from 'axios'
 import { Link, useParams } from 'react-router-dom'
 const SinglePage = () => {
     const [data, setData] = useState({})
+    const [allData, setAllData] = useState([])
     const { _id } = useParams()
     const getApidata = async () => {
         try {
@@ -13,22 +14,13 @@ const SinglePage = () => {
             console.log(error);
         }
     }
-
-    let [qty, setQty] = useState(1)
-
-    const increment = () => {
-        setQty(qty + 1)
-    }
-    const decriment = () => {
-        if (qty > 1) {
-            setQty(qty - 1)
-        }
-        else {
-            alert("Quatity is must me greatethen 1 then you can decriment the quantity")
-        }
+    const getAllProduct = async () => {
+        let res = await axios.get("http://localhost:8000/api/product/")
+        setAllData(res.data.data)
     }
     useEffect(() => {
         getApidata()
+        getAllProduct()
     }, [])
     return (
         <>
@@ -54,13 +46,13 @@ const SinglePage = () => {
                                         <img src={data.image} class="d-block singlepageimage1" alt="" />
                                     </div>
                                     <div class="carousel-item">
-                                        <img  src={data.image1} class="d-block singlepageimage1" alt="" />
+                                        <img src={data.image1} class="d-block singlepageimage1" alt="" />
                                     </div>
                                     <div class="carousel-item">
-                                        <img  src={data.image2} class="d-block singlepageimage1" alt="" />
+                                        <img src={data.image2} class="d-block singlepageimage1" alt="" />
                                     </div>
                                     <div class="carousel-item">
-                                        <img  src={data.image3} class="d-block singlepageimage1" alt="" />
+                                        <img src={data.image3} class="d-block singlepageimage1" alt="" />
                                     </div>
                                 </div>
                                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -110,6 +102,25 @@ const SinglePage = () => {
                 </div>
                 <div className='singlepagewaitbutton mb-5'>
                     <Link to='/contact' className='buttoncontact'>Enquery Product</Link>
+                </div>
+            </div>
+            <div>
+                <p className='aboutmainheading'>Related Product</p>
+                <div className="cardproduct">
+                    {allData.map((item, index) =>
+                        <div className="cardfirst">
+                            <div className="firstchild">
+                                <Link to={`/category/${item.categoryname}`} > <img src={item.image} alt="" className='productimage' /></Link>
+                            </div>
+                            <div className="secondchild">
+                                <p className='productname'>{item.categoryname}</p>
+                                <p className='text-center'>{item.description}</p>
+                                <div className='productbotton'>
+                                    <Link to={`/category/${item.categoryname}`} style={{ color: "white", textDecoration: "none" }}>See all Product</Link>
+                                </div>
+                            </div>
+                        </div>
+                    )}
                 </div>
             </div>
         </>
