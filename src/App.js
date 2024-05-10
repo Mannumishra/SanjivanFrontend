@@ -9,6 +9,7 @@ import About from './components/About/About';
 import Contact from './components/Contact/Contact';
 import Product from './components/Product/Product';
 import Cirtificates from './components/Cirtificates/Cirtificates';
+import CategoryProduct from './components/Categoryproduct/CategoryProduct';
 
 function App() {
   return (
@@ -18,9 +19,10 @@ function App() {
    <Routes>
     <Route path='/' element={<Home />} />
     <Route path='/about' element={<About />} />
-    <Route path='/singlepage' element={<SinglePage />} />
+    <Route path='/singlepage/:_id' element={<SinglePage />} />
     <Route path='/contact' element={<Contact />} />
     <Route path='/product' element={<Product />} />
+    <Route path='/category/:catedata' element={<CategoryProduct />} />
     <Route path='/cirtificates' element={<Cirtificates />} />
    </Routes>
    <Footer />

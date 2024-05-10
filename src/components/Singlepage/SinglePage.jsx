@@ -1,6 +1,19 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './Singlepage.css'
+import axios from 'axios'
+import { Link, useParams } from 'react-router-dom'
 const SinglePage = () => {
+    const [data, setData] = useState({})
+    const { _id } = useParams()
+    const getApidata = async () => {
+        try {
+            let res = await axios.get("http://localhost:8000/api/product/" + _id)
+            setData(res.data.data)
+        } catch (error) {
+            console.log(error);
+        }
+    }
+
     let [qty, setQty] = useState(1)
 
     const increment = () => {
@@ -10,20 +23,23 @@ const SinglePage = () => {
         if (qty > 1) {
             setQty(qty - 1)
         }
-        else{
+        else {
             alert("Quatity is must me greatethen 1 then you can decriment the quantity")
         }
     }
+    useEffect(() => {
+        getApidata()
+    }, [])
     return (
         <>
-            <div className="singlepage">
+            <div className="singlepage mainhome">
                 <div className="singlepagemain">
                     <div className="singlefirst">
                         <div className='chilefirst'>
-                            <img src="../image/prod1.webp" height={70} className='w-100' data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" alt="" />
-                            <img src="../image/prod1.webp" height={70} className='w-100' data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" alt="" />
-                            <img src="../image/prod1.webp" height={70} className='w-100' data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" alt="" />
-                            <img src="../image/prod1.webp" height={70} className='w-100' data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" alt="" />
+                            <img src={data.image} height={70} className='w-100' data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" alt="" />
+                            <img src={data.image1} height={70} className='w-100' data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" alt="" />
+                            <img src={data.image2} height={70} className='w-100' data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" alt="" />
+                            <img src={data.image3} height={70} className='w-100' data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" alt="" />
                         </div>
                         <div className='chilesecond'>
                             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -35,16 +51,16 @@ const SinglePage = () => {
                                 </div>
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
-                                        <img src="../image/prod1.webp" class="d-block singlepageimage1" alt="" />
+                                        <img src={data.image} class="d-block singlepageimage1" alt="" />
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="../image/prod1.webp" class="d-block singlepageimage1" alt="" />
+                                        <img  src={data.image1} class="d-block singlepageimage1" alt="" />
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="../image/prod1.webp" class="d-block singlepageimage1" alt="" />
+                                        <img  src={data.image2} class="d-block singlepageimage1" alt="" />
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="../image/prod1.webp" class="d-block singlepageimage1" alt="" />
+                                        <img  src={data.image3} class="d-block singlepageimage1" alt="" />
                                     </div>
                                 </div>
                                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -59,16 +75,17 @@ const SinglePage = () => {
                         </div>
                     </div>
                     <div className="singlesecond">
-                        <p className='singlepagetext'>Sajivan Ayurved</p>
-                        <p className='singlepageproductname'>Pure Shilajit Resin</p>
-                        <div className='singlepagerateing'>
+                        <p className='singlepagetext'>{data.categoryname}</p>
+                        {/* <p className='text-danger'> Product name</p> */}
+                        <p className='singlepageproductname'>{data.productname}</p>
+                        {/* <div className='singlepagerateing'>
                             <i class="ri-star-fill"></i>
                             <i class="ri-star-fill"></i>
                             <i class="ri-star-fill"></i>
                             <i class="ri-star-fill"></i>
                             <i class="ri-star-fill"></i>
-                        </div>
-                        <div className="priceandsaveprice">
+                        </div> */}
+                        {/* <div className="priceandsaveprice">
                             <p className='singlepageprice'>₹ 899.00 <span><del style={{ color: "black", opacity: "0.8", marginLeft: 10 }}>₹ 999.00</del></span></p>
                             <div className='savebutton'>
                                 SAVE ₹ 100.00
@@ -77,8 +94,8 @@ const SinglePage = () => {
                         <hr />
                         <div className="singlepagewaitbutton">
                             20gm
-                        </div>
-                        <p className='quantitytext'>Quantity:</p>
+                        </div> */}
+                        {/* <p className='quantitytext'>Quantity:</p>
                         <div className='cartquantity'>
                             <i class="ri-subtract-line iconsize" onClick={decriment}></i>
                             <p className='textquantity'>{qty}</p>
@@ -86,8 +103,13 @@ const SinglePage = () => {
                         </div>
                         <div className='productbotton'>
                             ADD TO CART
-                        </div>
+                        </div> */}
+                        <p className='text-danger'> Product Description</p>
+                        <p className=''>{data.productdescription}</p>
                     </div>
+                </div>
+                <div className='singlepagewaitbutton mb-5'>
+                    <Link to='/contact' className='buttoncontact'>Enquery Product</Link>
                 </div>
             </div>
         </>

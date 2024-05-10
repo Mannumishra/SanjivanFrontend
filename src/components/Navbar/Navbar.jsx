@@ -69,10 +69,10 @@ const Navbar = () => {
                                 <ul>
                                     <li><Link to="/">Home</Link></li>
                                     <li><Link to="/about">About</Link></li>
-                                    <li><Link to="/product">Product</Link></li>
-                                    <li><Link to='/cirtificates' >Our Certificates</Link></li>
+                                    <li><Link to="/product">Our Categories</Link></li>
+                                    <li><Link to='/cirtificates' >Our Certifications</Link></li>
                                     {/* <li><Link>Careers</Link></li> */}
-                                    <li><Link to="/contact">CONTRACT FOR MANUFACTURING</Link></li>
+                                    <li><Link to="/contact">CONTACT FOR MANUFACTURING</Link></li>
 
                                     {/* <li><Link>JOURNAL</Link></li>
                             <li><Link to="/about">ABOUT</Link></li>

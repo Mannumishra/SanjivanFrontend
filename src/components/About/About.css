@@ -1,0 +1,76 @@
+.aboutmaindiv{
+    padding: 20px 10px;
+}
+.aboutheadingg{
+    background-color: #134611;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+.abouttextdiv{
+    display: flex;
+}
+.abouttext{
+    margin-top: 50px;
+    padding: 15px;
+    font-size: 17px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    text-align: justify;
+}
+.abouttextt{
+    font-size: 17px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    margin-left: 20px;
+    text-align: justify;
+}
+.meatteam{
+    display: flex;
+    gap: 20px;
+    padding: 40px 50px;
+    justify-content: space-between;
+}
+.meetteammember{
+    background-color: #F6F6F6;
+    height: auto;
+    width: 30%;
+    padding: 10px;
+    border-radius: 10px;
+}
+.divteamimage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.teamimage{
+    height: 200px;
+    width: 70%;
+}
+.teamtext{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* line-height: 15px; */
+}
+.teamname{
+    background-color: #134611;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font: 15px;
+    padding: 5px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+.teammember{
+    font-size: 17px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    opacity: 1;
+}
