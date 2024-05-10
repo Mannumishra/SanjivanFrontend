@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './About.css'
 import banare1 from '../Image/banare1.jpg'
 import banare2 from '../Image/banare2.jpg'
@@ -11,6 +11,12 @@ import team2 from '../Image/team3.webp'
 
 
 const About = () => {
+    useEffect(() => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        })
+    }, [])
     return (
         <>
             <section className='mainhome'>
@@ -76,36 +82,36 @@ const About = () => {
                     </p>
                 </div>
                 <div className="team">
-                <div className="aboutheadingg">
+                    <div className="aboutheadingg">
                         <p>MEET OUR TEAM</p>
                     </div>
                     <div className="meatteam">
                         <div className="meetteammember">
-                                <div className='divteamimage'>
-                                    <img src={team} alt="" className="teamimage"/>
-                                </div>
-                                <div className="teamtext">
-                                    <p className='teamname'>Late Vaidya Bhagat Ram Goel</p>
-                                    <p className='teammember'>FOUNDER, SANJIVAN ANUSANDHAN PVT. LTD.</p>
-                                </div>
+                            <div className='divteamimage'>
+                                <img src={team} alt="" className="teamimage" />
+                            </div>
+                            <div className="teamtext">
+                                <p className='teamname'>Late Vaidya Bhagat Ram Goel</p>
+                                <p className='teammember'>FOUNDER, SANJIVAN ANUSANDHAN PVT. LTD.</p>
+                            </div>
                         </div>
                         <div className="meetteammember">
-                                <div className='divteamimage'>
-                                    <img src={team1} alt="" className="teamimage"/>
-                                </div>
-                                <div className="teamtext">
-                                    <p className='teamname'>Mr. Dinesh Goel</p>
-                                    <p className='teammember'>DIRECTOR, SANJIVAN ANUSANDHAN PVT. LTD.</p>
-                                </div>
+                            <div className='divteamimage'>
+                                <img src={team1} alt="" className="teamimage" />
+                            </div>
+                            <div className="teamtext">
+                                <p className='teamname'>Mr. Dinesh Goel</p>
+                                <p className='teammember'>DIRECTOR, SANJIVAN ANUSANDHAN PVT. LTD.</p>
+                            </div>
                         </div>
                         <div className="meetteammember">
-                                <div className='divteamimage'>
-                                    <img src={team2} alt="" className="teamimage"/>
-                                </div>
-                                <div className="teamtext">
-                                    <p className='teamname'>Ms. Monika Goel</p>
-                                    <p className='teammember'>CO-DIRECTOR, SANJIVAN ANUSANDHAN PVT. LTD.</p>
-                                </div>
+                            <div className='divteamimage'>
+                                <img src={team2} alt="" className="teamimage" />
+                            </div>
+                            <div className="teamtext">
+                                <p className='teamname'>Ms. Monika Goel</p>
+                                <p className='teammember'>CO-DIRECTOR, SANJIVAN ANUSANDHAN PVT. LTD.</p>
+                            </div>
                         </div>
                     </div>
                 </div>

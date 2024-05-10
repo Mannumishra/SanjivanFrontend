@@ -19,6 +19,10 @@ const CategoryProduct = () => {
   const filterData = data.filter((x) => x.categoryname === catedata)
   useEffect(() => {
     getApiData()
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    })
   }, [])
   return (
     <>

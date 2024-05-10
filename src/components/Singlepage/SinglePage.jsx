@@ -21,6 +21,10 @@ const SinglePage = () => {
     useEffect(() => {
         getApidata()
         getAllProduct()
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        })   
     }, [])
     return (
         <>

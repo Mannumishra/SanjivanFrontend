@@ -15,13 +15,13 @@ const Navbar = () => {
         setIsMobModeActive(false)
     }
 
-    const activeSearchBar = () => {
-        setIsSearchActive(!isSearchActive)
-    }
+    // const activeSearchBar = () => {
+    //     setIsSearchActive(!isSearchActive)
+    // }
 
-    const deActiveSearchBar = () => {
-        setIsSearchActive(false)
-    }
+    // const deActiveSearchBar = () => {
+    //     setIsSearchActive(false)
+    // }
     return (
         <>
             <header className='header-section'>
@@ -81,7 +81,7 @@ const Navbar = () => {
                             </nav>
                             <div className="search">
                                 <div className="icon">
-                                    <i class="ri-search-line" ></i>
+                                    <i class="ri-search-line" style={{display:"none"}}></i>
                                     <i class="ri-menu-line" onClick={activeMobMode}></i>
                                 </div>
                                 <div className={`search-box ${isSearchActive ? 'active-searchbar' : ''}`} >

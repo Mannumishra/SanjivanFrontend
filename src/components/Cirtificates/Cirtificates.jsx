@@ -1,10 +1,16 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import  './Cirtificate.css'
 import cirtificate1 from '../Image/cirtificate1.jpg'
 import cirtificate2 from '../Image/cirtificate2.jpg'
 import cirtificate3 from '../Image/cirtificate3.jpg'
 import cirtificate4 from '../Image/cirtificate4.jpg'
 const Cirtificates = () => {
+    useEffect(()=>{
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        })   
+    },[])
     return (
         <>
             <div className="container sectionmanagecirtificate">
