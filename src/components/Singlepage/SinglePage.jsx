@@ -8,14 +8,14 @@ const SinglePage = () => {
     const { _id } = useParams()
     const getApidata = async () => {
         try {
-            let res = await axios.get("http://localhost:8000/api/product/" + _id)
+            let res = await axios.get("https://sanjivanser.onrender.com/api/product/" + _id)
             setData(res.data.data)
         } catch (error) {
             console.log(error);
         }
     }
     const getAllProduct = async () => {
-        let res = await axios.get("http://localhost:8000/api/product/")
+        let res = await axios.get("https://sanjivanser.onrender.com/api/product/")
         setAllData(res.data.data)
     }
     useEffect(() => {

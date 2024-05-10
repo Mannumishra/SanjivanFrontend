@@ -17,7 +17,7 @@ const Product = () => {
 
     const getApiData = async () => {
         try {
-            let res = await axios.get("http://localhost:8000/api/category")
+            let res = await axios.get("https://sanjivanser.onrender.com/api/category")
             console.log(res);
             setData(res.data.data)
         } catch (error) {
