@@ -96,7 +96,7 @@ const Home = () => {
             </div>
           </div>
           <div className="row">
-            <div className="col-md-6">
+            <div className="col-md-6 mt-5">
               <p className='aboutheading'>Sanjivan Anusandhan Your Trusted  Partner for Quality Ayurvedic Products</p>
               <p className='abouttext'>At Sanjivan Anusandhan, we're passionate about harnessing the power of nature to create high-quality Ayurvedic products that promote health and well-being.  For over 80 years, we've been a leading manufacturer of luxurious and contemporary Ayurvedic medicines, drawing on the wisdom of ancient practices to develop effective solutions.</p>
             </div>
@@ -116,7 +116,7 @@ const Home = () => {
             </div>
             <div className="col-md-6">
               <div>
-                <p className='headinghomefirst'>Research & Development in Third-Party Manufacturing for Ayurvedic Products:</p>
+                <p className='aboutheading headinghomefirst'>Research & Development in Third-Party Manufacturing for Ayurvedic Products:</p>
                 <p> At <strong>Sanjivan Anushandhan,</strong> our in-house R&D department is dedicated to formulating new Ayurvedic products and ensuring their quality through rigorous testing. Collaborating with renowned and NABL accredited laboratories across India, we uphold the highest standards in our manufacturing processes, guaranteeing the safety, efficacy, and compliance of our offerings. Our commitment to innovation, continuous improvement, and customer satisfaction underscores every aspect of our third-party manufacturing services, fostering trust and reliability among our partners and consumers alike.</p>
                 <p><strong>Pharmacognosy-</strong> To identify authentication raw materials through Microscopic and Macroscopic methods.</p>
                 <p><strong>Chemistry-</strong> To ensure the quality standards of every product, we implement rigorous pre-process, in-process, and post-process controls.</p>
@@ -134,7 +134,7 @@ const Home = () => {
       <section>
         <div className="container labsection">
           <div className="row">
-            <div className="col-md-12">
+            <div className="col-md-12 mt-3">
               <p className='whyshould'>Why Should You Pick sajivan anushandhan
                 for Third-Party Product Manufacturing in India?</p>
               <p className='textwhyshould'>Choosing Sanjivan Anushandhan for third-party manufacturing in India offers numerous advantages. With our robust in-house R&D capabilities and collaborations with renowned NABL accredited laboratories, we ensure the highest standards of quality, safety, and compliance in every product we manufacture. Our commitment to innovation, continuous improvement, and customer satisfaction distinguishes us in the industry, fostering trust and reliability among our partners. Moreover, our expertise in Ayurvedic formulations, combined with efficient manufacturing processes, enables us to deliver cost-effective solutions tailored to meet the diverse needs of our clients. Partnering with Sanjivan Anushandhan ensures seamless production, superior quality, and a competitive edge in the dynamic market of Ayurvedic products.</p>

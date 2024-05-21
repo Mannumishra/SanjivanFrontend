@@ -26,16 +26,16 @@
 
 .thirdparyheading {
     font-size: 17px;
-    opacity: 0.9;
-    font-weight: 700;
+    /* opacity: 0.9; */
+    font-weight: 750;
     align-items: center;
 }
 
 .whyshould {
     text-align: center;
     font-size: 25px;
-    font-weight: 600;
-    opacity: 0.9;
+    font-weight: 750;
+    /* opacity: 0.9; */
 }
 
 .textwhyshould {
