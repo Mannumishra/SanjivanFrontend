@@ -18,7 +18,7 @@
 }
 
 .divsectionthirdparty {
-    background-color: #F6F6F6;
+    background-color: #f6f6f61b;
     padding: 20px 20px;
     /* gap: 2px; */
     border-radius: 5px;
@@ -85,7 +85,7 @@
 }
 
 .mainhome {
-    margin-top: 120px;
+    margin-top: 80px;
 }
 
 @media(max-width:768px) {
@@ -93,7 +93,9 @@
         padding: 40px 10px;
         margin-top: 40px;
     }
-
+    .mainhome {
+        margin-top: 50px;
+    }
     .aboutheading {
         font-size: 20px;
         font-weight: 700;

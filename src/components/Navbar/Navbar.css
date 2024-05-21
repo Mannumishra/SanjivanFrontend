@@ -7,8 +7,8 @@
     background-color: white;
 }
 .logiimg{
-    height: 120px !important;
-    width: 120px !important;
+    height: 80px !important;
+    width: 80px !important;
 }
 .header-section .header-container{
     max-width: 1920px;
@@ -227,8 +227,8 @@
 
 @media (max-width:950px) {
     .logiimg{
-        height: 80px !important;
-        width: 80px !important;
+        height: 50px !important;
+        width: 50px !important;
     }
     .header-section{
         width: 100%;
