@@ -32,22 +32,22 @@ const Product = () => {
         window.scrollTo({
             top: 0,
             behavior: "smooth"
-        })   
+        })
     }, [])
     return (
         <>
             <section className='mainhome'>
                 <div className="product">
-                    <div className="coreheading">
+                    <div className="aboutheading text-center">
                         Product Range Available for Third Party Manufacturing
                     </div>
-                    <p className='productsmallheading'>EXCLUSIVE DEALS AWAIT YOU</p>
+                    {/* <p className='productsmallheading'>EXCLUSIVE DEALS AWAIT YOU</p> */}
                 </div>
                 <div className="cardproduct">
                     {data.map((item, index) =>
                         <div className="cardfirst">
                             <div className="firstchild">
-                            <Link to={`/category/${item.categoryname}`} > <img src={item.image} alt="" className='productimage' /></Link>
+                                <Link to={`/category/${item.categoryname}`} > <img src={item.image} alt="" className='productimage' /></Link>
                             </div>
                             <div className="secondchild">
                                 <p className='productname'>{item.categoryname}</p>

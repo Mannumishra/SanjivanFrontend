@@ -119,8 +119,9 @@ const Home = () => {
                 <p className='headinghomefirst'>Research & Development in Third-Party Manufacturing for Ayurvedic Products:</p>
                 <p> At <strong>Sanjivan Anushandhan,</strong> our in-house R&D department is dedicated to formulating new Ayurvedic products and ensuring their quality through rigorous testing. Collaborating with renowned and NABL accredited laboratories across India, we uphold the highest standards in our manufacturing processes, guaranteeing the safety, efficacy, and compliance of our offerings. Our commitment to innovation, continuous improvement, and customer satisfaction underscores every aspect of our third-party manufacturing services, fostering trust and reliability among our partners and consumers alike.</p>
                 <p><strong>Pharmacognosy-</strong> To identify authentication raw materials through Microscopic and Macroscopic methods.</p>
-                <p><strong>Pharmacognosy-</strong> To identify authentication raw materials through Microscopic and Macroscopic methods.</p>
-                <p><strong>Pharmacognosy-</strong> To identify authentication raw materials through Microscopic and Macroscopic methods.</p>
+                <p><strong>Chemistry-</strong> To ensure the quality standards of every product, we implement rigorous pre-process, in-process, and post-process controls.</p>
+                <p><strong>Pharmaceutics-</strong>To ensure the development of new formulations, effective presentations, and optimal dosages for each medicine.</p>
+                <p><strong>Microbiology-</strong> To ensure the absence of microbial contamination in Ayurvedic products, standardize fermentation processes, and identify herbs with strong antibacterial and antifungal properties.</p>
               </div>
             </div>
           </div>
@@ -191,7 +192,7 @@ const Home = () => {
           <div className="aboutheading text-center">
             Product Range Available for Third Party Manufacturing
           </div>
-          <p className='productsmallheading'>EXCLUSIVE DEALS AWAIT YOU</p>
+          {/* <p className='productsmallheading'>EXCLUSIVE DEALS AWAIT YOU</p> */}
         </div>
         <div className="cardproduct">
           {data.map((item, index) =>

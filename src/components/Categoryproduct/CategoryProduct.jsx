@@ -31,7 +31,7 @@ const CategoryProduct = () => {
           <div className="aboutheading text-center">
             Product Available {catedata} category
           </div>
-          <p className='productsmallheading'>EXCLUSIVE DEALS AWAIT YOU</p>
+          <p className='productsmallheading'></p>
         </div>
         <div className="cardproduct">
           {filterData.map((item, index) =>
